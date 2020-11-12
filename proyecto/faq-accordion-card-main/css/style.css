@@ -19,11 +19,17 @@ section{
     justify-content: center;
 }
 
+.bg-pattern-mobile{
+    display: none;
+}
+.ilustration-women-mobile{
+display: none;
+}
+
 .container {
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-image: url(../images/bg-pattern-desktop.svg);
     height: 100vh;
     max-height: 60rem;
     background-color: white;
@@ -46,10 +52,14 @@ section{
     width: 500px;
 }
 
-.ilustration-woman{
+/* .ilustration-women{
     position: absolute;
     top: 100px;
-}
+} */
+
+/* .ilustration-women-mobile{
+display: none;
+} */
 
 .box-desktop{
     position: absolute;
@@ -140,6 +150,7 @@ display: none;
 .attribution {
     font-size: 11px;
     text-align: center;
+    background-color:  hsl(273, 75%, 66%);;
   }
   .attribution a {
     color: hsl(228, 45%, 44%);
@@ -150,4 +161,30 @@ display: none;
   display: flex;
   flex-direction: column;
     }
-  }
+    .ilustration-women,.box-desktop {
+        display: none;
+    }
+    .ilustration-women-mobile{
+        display: block;
+        position: relative;
+        margin-left: -150px;
+    }
+    .bg-pattern-desktop{
+        display: none;
+    }
+    .bg-pattern-mobile{
+        display: block;
+        width: 80%;
+        position: absolute;
+        margin-top: -130px;
+    }
+    .accordion{
+        margin: 9rem 1rem;
+        padding: 3.5rem 0.5rem 2rem 0.5rem; 
+        width: 90%;
+        height: auto;
+    }
+    .accordion-item{
+       width: 100%;
+    }
+    }
